@@ -12,6 +12,10 @@ Copy-Item "$st\plugins\edge-tts\voice-profiles.json" "$repo\plugins\edge-tts\voi
 Copy-Item "$st\plugins\edge-tts\dist\plugin.js" "$repo\plugins\edge-tts\dist\plugin.js" -Force
 Copy-Item "$st\config.yaml" "$repo\config.yaml" -Force
 
+Write-Host 'Copiando parche de voces por hablante...'
+New-Item -ItemType Directory -Force -Path "$repo\patches" | Out-Null
+Copy-Item "$st\public\scripts\extensions\tts\index.js" "$repo\patches\tts-speakers-index.js" -Force
+
 Write-Host 'Copiando datos del usuario...'
 robocopy "$st\data\default-user" "$repo\data\default-user" 'settings.json' @log | Out-Null
 robocopy "$st\data\default-user\OpenAI Settings" "$repo\data\default-user\OpenAI Settings" /MIR @log | Out-Null

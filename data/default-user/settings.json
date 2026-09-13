@@ -2,7 +2,7 @@
     "firstRun": false,
     "accountStorage": {
         "__migrated": "1",
-        "LNavOpened": "true",
+        "LNavOpened": "false",
         "NavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"3090278210222208\":{\"fieldsWarned\":{}},\"1547467663366332\":{\"fieldsWarned\":{}}}}",
         "SelectedNavTab": "rm_button_characters",
@@ -113,7 +113,7 @@
     },
     "currentVersion": "1.18.0",
     "username": "Kevin",
-    "active_character": "Sylph  Súcubo.png",
+    "active_character": "Susie.png",
     "active_group": null,
     "user_avatar": "user-default.png",
     "amount_gen": 1500,
@@ -761,7 +761,7 @@
                     "3 Hijas": "es-EC-AndreaNeural",
                     "Maria La Carga": "es-PR-KarinaNeural",
                     "Avelyn": "es-UY-ValentinaNeural",
-                    "Erin Richards": "es-ES-XimenaNeural",
+                    "Erin Richards": "es-MX-DaliaNeural",
                     "Fleur  She owes you a lot of money and is ready to pay it back by any means necessary": "es-BO-SofiaNeural",
                     "Her Taste has Change  Raven - Forked": "es-CU-BelkysNeural",
                     "Isabella Hawthorn": "es-DO-RamonaNeural",
@@ -772,7 +772,7 @@
                     "Privaty": "es-PA-MargaritaNeural",
                     "Sharon": "es-PY-TaniaNeural",
                     "Stacy  Almacén": "es-SV-LorenaNeural",
-                    "Susie": "es-MX-DaliaNeural",
+                    "Susie": "es-CR-MariaNeural",
                     "Sylph  Súcubo": "es-CO-SalomeNeural",
                     "The Swim Captain Made You Her Target. Now She Can't Stop Cornering You  Cordelia Ashbourne-Tachiba": "es-ES-ElviraNeural",
                     "[Default Voice]": "es-MX-DaliaNeural",
@@ -813,7 +813,7 @@
                     "Avelyn (\"Quotes\")": "es-UY-ValentinaNeural",
                     "Avelyn (*Text inside asterisks*)": "es-MX-JorgeNeural",
                     "Avelyn (Other text)": "es-MX-JorgeNeural",
-                    "Erin Richards (\"Quotes\")": "es-ES-XimenaNeural",
+                    "Erin Richards (\"Quotes\")": "es-MX-DaliaNeural",
                     "Erin Richards (*Text inside asterisks*)": "es-MX-JorgeNeural",
                     "Erin Richards (Other text)": "es-MX-JorgeNeural",
                     "Fleur  She owes you a lot of money and is ready to pay it back by any means necessary (\"Quotes\")": "es-BO-SofiaNeural",
@@ -846,7 +846,7 @@
                     "Stacy  Almacén (\"Quotes\")": "es-SV-LorenaNeural",
                     "Stacy  Almacén (*Text inside asterisks*)": "es-MX-JorgeNeural",
                     "Stacy  Almacén (Other text)": "es-MX-JorgeNeural",
-                    "Susie (\"Quotes\")": "es-MX-DaliaNeural",
+                    "Susie (\"Quotes\")": "es-CR-MariaNeural",
                     "Susie (*Text inside asterisks*)": "es-MX-JorgeNeural",
                     "Susie (Other text)": "es-MX-JorgeNeural",
                     "Sylph  Súcubo (\"Quotes\")": "es-CO-SalomeNeural",
@@ -1274,6 +1274,9 @@
                     "setList": []
                 },
                 "Sylph  Súcubo.png": {
+                    "setList": []
+                },
+                "Susie.png": {
                     "setList": []
                 }
             }
