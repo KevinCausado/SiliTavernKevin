@@ -80,7 +80,7 @@
         "AlertWI_Nyx — Pícara Gatuna.png": "true",
         "AlertWI_Corruption school.png": "true",
         "NavLockOn": "true",
-        "LNavLockOn": "false",
+        "LNavLockOn": "true",
         "Assets_SkipConfirm_2502775700152061": "false",
         "AlertWI_Naruto — Sangre Sin Nombre1.png": "true",
         "AlertWI_Gongeol La Que No Sube.png": "true",
@@ -113,7 +113,7 @@
     },
     "currentVersion": "1.18.0",
     "username": "Kevin",
-    "active_character": "Susie.png",
+    "active_character": "Valeria.png",
     "active_group": null,
     "user_avatar": "user-default.png",
     "amount_gen": 1500,
@@ -739,7 +739,7 @@
             "ElevenLabs": {},
             "System": {},
             "narrate_user": false,
-            "playback_rate": 1,
+            "playback_rate": "1.25",
             "multi_voice_enabled": true,
             "apply_regex": false,
             "regex_pattern": "",
@@ -985,6 +985,11 @@
                 "El padre": {
                     "voice": "es-VE-SebastianNeural",
                     "gender": "m",
+                    "source": "heuristic"
+                },
+                "Mama": {
+                    "voice": "es-VE-PaolaNeural",
+                    "gender": "f",
                     "source": "heuristic"
                 }
             }
@@ -1284,6 +1289,9 @@
                     "setList": []
                 },
                 "Susie.png": {
+                    "setList": []
+                },
+                "Fleur  She owes you a lot of money and is ready to pay it back by any means necessary.png": {
                     "setList": []
                 }
             }
