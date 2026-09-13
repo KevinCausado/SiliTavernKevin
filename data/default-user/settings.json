@@ -980,6 +980,13 @@
                 },
                 "model": "gemini-3.1-flash-tts-preview",
                 "apiType": "makersuite"
+            },
+            "auto_speaker_voices": {
+                "El padre": {
+                    "voice": "es-VE-SebastianNeural",
+                    "gender": "m",
+                    "source": "heuristic"
+                }
             }
         },
         "sd": {

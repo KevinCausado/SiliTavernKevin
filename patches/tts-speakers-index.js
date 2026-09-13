@@ -851,7 +851,8 @@ async function processTtsQueue() {
     const char = currentTtsJob.name;
 
     // Remove character name from start of the line if power user setting is disabled
-    if (char && !power_user.allow_name2_display) {
+    // (with multi-voice the markers stay: the speaker parser needs them and cleans them from speech)
+    if (char && !power_user.allow_name2_display && !extension_settings.tts.multi_voice_enabled) {
         const escapedChar = escapeRegex(char);
         text = text.replace(new RegExp(`^${escapedChar}:`, 'gm'), '');
     }
