@@ -844,8 +844,8 @@ async function processTtsQueue() {
         text = await ttsProvider.processText(text);
     }
 
-    // Collapse newlines and spaces into single space
-    text = text.replace(/\s+/g, ' ').trim();
+    // Collapse runs of spaces/tabs but keep line breaks so speaker parsing works
+    text = text.replace(/[^\S\n]+/g, ' ').replace(/\n{2,}/g, '\n').trim();
 
     console.log(`TTS: ${text}`);
     const char = currentTtsJob.name;
