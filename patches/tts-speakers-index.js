@@ -538,6 +538,15 @@ const AUTO_SPEAKER_VOICES_MALE = ['es-AR-TomasNeural', 'es-BO-MarceloNeural', 'e
 const AUTO_SPEAKER_VOICES_FEMALE = ['es-AR-ElenaNeural', 'es-BO-SofiaNeural', 'es-CL-CatalinaNeural', 'es-CO-SalomeNeural', 'es-CR-MariaNeural', 'es-CU-BelkysNeural', 'es-DO-RamonaNeural', 'es-EC-AndreaNeural', 'es-ES-ElviraNeural', 'es-ES-XimenaNeural', 'es-GQ-TeresaNeural', 'es-GT-MartaNeural', 'es-HN-KarlaNeural', 'es-MX-DaliaNeural', 'es-NI-YolandaNeural', 'es-PA-MargaritaNeural', 'es-PE-CamilaNeural', 'es-PR-KarinaNeural', 'es-PY-TaniaNeural', 'es-SV-LorenaNeural', 'es-US-PalomaNeural', 'es-UY-ValentinaNeural', 'es-VE-PaolaNeural'];
 const AUTO_SPEAKER_FEMALE_NAMES = new Set(['maria', 'carmen', 'ana', 'laura', 'lucia', 'sofia', 'marta', 'elena', 'paula', 'sara', 'isabel', 'rosa', 'pilar', 'teresa', 'julia', 'daniela', 'valentina', 'camila', 'natalia', 'andrea', 'claudia', 'gabriela', 'veronica', 'patricia', 'monica', 'silvia', 'beatriz', 'raquel', 'alicia', 'nuria', 'ines', 'irene', 'clara', 'candela', 'alba', 'emma', 'olivia', 'martina', 'catalina', 'antonella', 'agustina', 'milagros', 'rocio', 'amparo', 'concepcion', 'dolores', 'mercedes', 'rosario', 'esperanza', 'gloria', 'susana', 'sonia', 'lorena', 'pamela', 'jessica', 'jennifer', 'brianna', 'ashley', 'madison', 'hannah', 'emily', 'sarah', 'erin', 'amber', 'brooke', 'avery', 'megan', 'karen', 'linda', 'susan', 'nancy', 'diane', 'mary', 'elizabeth', 'barbara', 'lisa', 'betty', 'margaret', 'sandra', 'kimberly', 'donna', 'michelle', 'carol', 'amanda', 'dorothy', 'melissa', 'deborah', 'stephanie', 'rebecca', 'sharon', 'cynthia', 'kathleen', 'amy', 'angela', 'shirley', 'anna', 'brenda', 'nicole', 'helen', 'samantha', 'katherine', 'christine', 'debra', 'rachel', 'carolyn', 'janet', 'catherine', 'heather', 'ruth', 'julie', 'joyce', 'virginia', 'victoria', 'kelly', 'lauren', 'christina', 'joan', 'evelyn', 'judith', 'cheryl', 'martha', 'frances', 'jacqueline', 'ann', 'jean', 'kathryn', 'alice', 'janice', 'doris', 'grace', 'judy', 'abigail', 'marie', 'denise', 'beverly', 'theresa', 'marilyn', 'danielle', 'diana', 'brittany', 'natalie', 'sophia', 'rose', 'isabella', 'alexis', 'kayla', 'paige', 'courtney', 'morgan', 'taylor', 'sydney', 'naomi']);
 const AUTO_SPEAKER_MALE_NAMES = new Set(['juan', 'jose', 'carlos', 'luis', 'miguel', 'antonio', 'francisco', 'manuel', 'pedro', 'angel', 'david', 'jorge', 'javier', 'daniel', 'rafael', 'alberto', 'fernando', 'sergio', 'pablo', 'andres', 'alejandro', 'diego', 'adrian', 'ivan', 'ruben', 'oscar', 'hugo', 'martin', 'gonzalo', 'rodrigo', 'ignacio', 'mateo', 'tomas', 'matias', 'sebastian', 'emilio', 'victor', 'hector', 'ramon', 'raul', 'ricardo', 'eduardo', 'roberto', 'alvaro', 'nicolas', 'gabriel', 'maximiliano', 'bruno', 'dario', 'fabio', 'lorenzo', 'marco', 'mauro', 'ramiro', 'santiago', 'alejo', 'facundo', 'lautaro', 'thiago', 'benjamin', 'joaquin', 'agustin', 'john', 'michael', 'james', 'robert', 'william', 'richard', 'thomas', 'charles', 'christopher', 'matthew', 'anthony', 'mark', 'donald', 'steven', 'paul', 'andrew', 'joshua', 'kenneth', 'kevin', 'brian', 'george', 'edward', 'ronald', 'timothy', 'jason', 'jeffrey', 'ryan', 'jacob', 'gary', 'nicholas', 'eric', 'jonathan', 'stephen', 'larry', 'justin', 'scott', 'brandon', 'samuel', 'gregory', 'alexander', 'patrick', 'frank', 'raymond', 'jack', 'dennis', 'jerry', 'tyler', 'aaron', 'adam', 'henry', 'nathan', 'douglas', 'zachary', 'peter', 'kyle', 'walter', 'ethan', 'jeremy', 'harold', 'keith', 'christian', 'roger', 'noah', 'gerald', 'carl', 'terry', 'sean', 'austin', 'arthur', 'lawrence', 'jesse', 'dylan', 'bryan', 'joe', 'jordan', 'billy', 'bruce', 'albert', 'willie', 'logan', 'alan', 'wayne', 'roy', 'ralph', 'randy', 'eugene', 'vincent', 'russell', 'elijah', 'louis', 'bobby', 'philip', 'johnny', 'takeshi', 'hiro', 'kenji', 'akira', 'daisuke', 'ryo', 'yuki', 'haruki', 'tom']);
+const AUTO_SPEAKER_ROLE_WORDS = {
+    padre: 'm', papa: 'm', madre: 'f', mama: 'f', hermano: 'm', hermana: 'f', hijo: 'm', hija: 'f',
+    tio: 'm', tia: 'f', abuelo: 'm', abuela: 'f', primo: 'm', prima: 'f', sobrino: 'm', sobrina: 'f',
+    novio: 'm', novia: 'f', esposo: 'm', esposa: 'f', marido: 'm', jefe: 'm', jefa: 'f',
+    doctor: 'm', doctora: 'f', profesor: 'm', profesora: 'f', maestro: 'm', maestra: 'f',
+    senor: 'm', senora: 'f', sr: 'm', sra: 'f', don: 'm', dona: 'f', chico: 'm', chica: 'f',
+    muchacho: 'm', muchacha: 'f', nino: 'm', nina: 'f', amigo: 'm', amiga: 'f', vecino: 'm', vecina: 'f',
+    cliente: 'm', clienta: 'f', enfermero: 'm', enfermera: 'f', mesero: 'm', mesera: 'f',
+};
 const AUTO_SPEAKER_IGNORED = new Set(['narrador', 'narradora', 'gm', 'sistema', 'system', 'dungeon master', 'dm', 'escena', 'narracion', 'resumen', 'nota', 'pov', 'lugar', 'hora', 'clima', 'estado', 'flashback']);
 
 function normalizeSpeakerName(name) {
@@ -548,6 +557,11 @@ function guessSpeakerGender(name) {
     const normalized = normalizeSpeakerName(name);
     if (!normalized || AUTO_SPEAKER_IGNORED.has(normalized)) {
         return null;
+    }
+    const words = normalized.split(/\s+/);
+    const lastWord = words[words.length - 1];
+    if (AUTO_SPEAKER_ROLE_WORDS[lastWord] !== undefined) {
+        return AUTO_SPEAKER_ROLE_WORDS[lastWord];
     }
     if (AUTO_SPEAKER_FEMALE_NAMES.has(normalized)) {
         return 'f';
