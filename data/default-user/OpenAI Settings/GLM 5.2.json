@@ -54,7 +54,7 @@
     "workers_ai_model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
     "workers_ai_account_id": "",
     "openai_max_context": 32768,
-    "openai_max_tokens": 700,
+    "openai_max_tokens": 1500,
     "names_behavior": 0,
     "send_if_empty": "",
     "impersonation_prompt": "[Write your next reply from the point of view of {{user}}, using the chat history so far as a guideline for the writing style of {{user}}. Don't write as {{char}} or system. Don't describe actions of {{char}}.]",
@@ -68,7 +68,7 @@
     "scenario_format": "{{scenario}}",
     "personality_format": "{{personality}}",
     "group_nudge_prompt": "[Write the next reply only as {{char}}.]",
-    "stream_openai": false,
+    "stream_openai": true,
     "prompts": [
         {
             "name": "Main Prompt",
