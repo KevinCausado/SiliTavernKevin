@@ -653,7 +653,7 @@
             "rerollIfSame": true
         },
         "connectionManager": {
-            "selectedProfile": "5c78f05b-8887-4345-b73e-306fd8effcbd",
+            "selectedProfile": "13f03ba4-6144-4222-a09d-56d349eaee07",
             "profiles": [
                 {
                     "id": "13f03ba4-6144-4222-a09d-56d349eaee07",
@@ -8667,18 +8667,18 @@
         "extensions": {}
     },
     "oai_settings": {
-        "preset_settings_openai": "GLM 5.2",
+        "preset_settings_openai": "Deepseek v4 flash",
         "temp_openai": 0.95,
         "freq_pen_openai": 0,
         "pres_pen_openai": 0,
-        "top_p_openai": 0.85,
+        "top_p_openai": 0.95,
         "top_k_openai": 0,
         "min_p_openai": 0.05,
         "top_a_openai": 0,
-        "repetition_penalty_openai": 1.07,
+        "repetition_penalty_openai": 1.05,
         "stream_openai": true,
         "openai_max_context": 32768,
-        "openai_max_tokens": 1500,
+        "openai_max_tokens": 2000,
         "prompts": [
             {
                 "name": "Main Prompt",
@@ -8691,7 +8691,7 @@
                 "name": "Auxiliary Prompt",
                 "system_prompt": true,
                 "role": "system",
-                "content": "",
+                "content": "Siempre breve: 2 o 3 parrafos cortos por respuesta, narracion mas dialogo, unas 120 a 180 palabras en total. No repitas ni resumas lo ya narrado; avanza la escena un solo paso y deja que {{user}} decida su parte. Termina siempre en un punto natural, con la idea y el dialogo del turno completos, nunca a medias. Conserva el formato **Nombre:** en bloque propio y nunca hables por {{user}}.",
                 "identifier": "nsfw"
             },
             {
@@ -8938,8 +8938,8 @@
         "custom_include_body": "",
         "custom_exclude_body": "",
         "custom_include_headers": "",
-        "openrouter_model": "z-ai/glm-5.2",
-        "openrouter_use_fallback": false,
+        "openrouter_model": "deepseek/deepseek-v3.2",
+        "openrouter_use_fallback": true,
         "openrouter_providers": [],
         "openrouter_quantizations": [],
         "openrouter_allow_fallbacks": true,
